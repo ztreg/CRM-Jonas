@@ -28,7 +28,7 @@ class Login {
             if(databaseUserN == userN && databasePWord == pword) {
                 fel = false;
                 alert("Du är inloggad som " + userN);
-                window.location.href = "../LandingPage/index.html";
+                window.location.href = "LandingPage/index.html";
                 }
             }
             if(fel == true) {

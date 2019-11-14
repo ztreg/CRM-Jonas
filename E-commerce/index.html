@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>E-Commerce</title>
+</head>
+
+<body>
+    <div class="topnav">
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <div id="linkContainer">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i> </a>
+            <div id="myLinks">
+                <a href="#news">NYHETER</a> <br>
+                <a href="#contact">KLÄDER</a> <br>
+                <a href="#about">VARUMÄRKEN</a> <br>
+                <a href="#inspiration">INSPIRATION</a> <br>
+                <a href="#rea">REA</a>
+            </div>
+        </div>
+
+        <a href="#home" class="active"></a>
+        <!-- Search ICON -->
+        <form id="search">
+            <button id="searchButton" type="button" onclick="showSearch()"><i
+                    class="fa fa-search"><span></span></i></button>
+        </form>
+        <!-- Search function -->
+        <div class="active-purple-3 active-purple-4 mb-4">
+            <input id="form-control" type="text" placeholder="Search" aria-label="Search">
+        </div>
+
+        <div id="logo">
+            <h3>NODE.JS</h3>
+        </div>
+        <div>
+            <a href="#" class="fas fa-shopping-cart" id="shopCart"></a>
+        </div>
+        <div>
+            <a href="#" class="fa fa-user" aria-hidden="true" id="userIcon"></a>
+        </div>
+    </div>
+
+    
+        <p style="text-align: center; display: block;">
+            <span class="mediumText">Medlemserbjudande - 2st Pull Push T-shirt 599kr</span> <br>
+            <span class="smallText">Kombinera färger & modeller, rabatten dras i kassan.</span>
+        </p>
+    <div class="grid-body">
+        <div class="img-container">
+                <a href="#"><img id="pic1" src="https://cdn1.blovcdn.com/bloglovin/aHR0cHMlM0ElMkYlMkZoeXBlYmVhc3QuY29tJTJGaW1hZ2UlMkYyMDE4JTJGMTIlMkZoZXJvbi1wcmVzdG9uLWNhcmhhcnR0LXdpcC1jb2xsYWItaW50ZXJ2aWV3LXN0cmVldC1zdHlsZS0yLmpwZw==?checksum=74a8ab5601f9d90e48bae1324fecb05fd4edd46f&format=j" alt="pic1"></a> <br>
+                <a href="#"><img id="pic2" src="https://cdn-images.italist.com/image/upload/t_zoom_v3_q_auto/e91e2b543076b7f67db8d7b9d1360a3d.jpg" alt="pic2"></a>
+                <a href="#"><img id="pic3" src="https://cdn-images.italist.com/image/upload/t_zoom_v3_q_auto/e91e2b543076b7f67db8d7b9d1360a3d.jpg" alt="pic3"></a> 
+        </div>
+            <p style="text-align: center; display: block;">
+                <span class="mediumText">Git Pull T-shirt</span> <br>
+                <span class="smallText">299kr</span>
+            </p>
+            <p style="text-align: center; display: block;">
+                    <span class="mediumText">Git Pull T-shirt</span> <br>
+                    <span class="smallText">299kr</span>
+            </p>
+
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+body {
+    background-color:#002965;;
+}
+
+.allCustomers {
+    height: 100%;
+    font-size: 1.2em;
+    background-color: white;
+    color: #00072D;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px rgba(0,0,0,0.23);
+}
+
+#row {
+    border: 1px solid #002965;
+    padding: 5px;
+
+}
+
+#row:hover {
+    background-color: #3388DD;
+}
+
+#idBox { 
+    text-align: center ;
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+}
+
+#nameBox {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+
+#sortByName , #sortByID {
+  background-color: #002965;
+  padding: 10px;
+  color: #ffff;
+}
+
+#icon {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    width: 20%;
+    text-decoration: none;
+    text-shadow: violet;
+    height: 100%;
+    background-color: #002965;
+}
+
+#icon a {
+  color: #ffff;
+}
+
+#icon:hover {
+  border: 1px dotted white;
+}
+
+.show {
+    display: inline-block;
+    text-align: right;
+}
+
+#the_h1 {
+    font-size: 2em;
+    color: #00072D;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+table, th, td {
+    border: 1px solid black;
+    padding: 15px;
+  }
+
+table {
+  width: 100%;
+}
+
+th {
+    text-align: left;
+  height: 50px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #002965;
+  color: #ffff;
+}
+
+#table td{
+  font-size: 1.4em;
+}
+
+#table button {
+  
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+#popUpArea{
+  display:flex;
+  color:white;
+  height: 16vh;
+  background-color: #002965;
+  width:100%;
+  margin: 0vh 0vw 0vh 0vw;
+  justify-content:flex-end;
+  justify-content: space-evenly;
+  justify-content:space-between;
+  text-align:center;
+  position:fixed;
+  bottom:10%;
+  padding: 0;
+  font-size: 12px; 
+}
+}
+#popUpArea img{
+  height: 7vh;
+  margin-bottom: 2px;
+}
+#popUpArea label{
+  margin-top:0;
+}
+.menuItems{
+  display:flex;
+  flex-direction:column;
+  margin: 2vh 10vw 2vh 11vw; 
+}
+#menuChoice-1{
+  align-items:center;
+  text-align:center;
+  padding: 0px;
+  width: 30vw;
+  margin-top: 10px;
+}
+#menuChoice-1 img{
+  width: 45px;
+  height: 45px;
+  padding :0;
+  margin: 0; 
+}
+#menuChoice-2{
+  margin-top: 6px;
+  align-items:center;
+  width:30vw;
+  padding: 0px;  
+}
+#menuChoice-2 img{
+  width:50px;
+  height: 50px;
+  padding :0;
+  margin: 0; 
+}
+#menuChoice-3{
+  align-items:center;
+  padding: 0px;
+  width: 30vw;
+}
+#menuChoice-3 img{
+  width: 40px;
+  height: 40px;
+  padding :0;
+  margin: 0;  
+}
+#menuChoice-1 label{
+  margin: 0;
+}
+#menuChoice-2 label{
+  margin: 0;
+}
+#menuChoice-3 label{
+  margin:0;
+}
+
+
+.dropdown-content a { 
+  display: flex; justify-content: center; 
+}
+
+@media screen and (max-width: 350px) {
+  .allCustomers {
+    font-size: 0.8em;
+  }
+  table {
+    font-size: 0.8em;
+  }
+}
+
+  @media screen and (min-width: 500px) {
+    
+    .responseContainer {
+     
+        width: 500px;
+        margin: 3vh auto auto auto;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px rgba(0,0,0,0.23);
+    }
+    #popUpArea{
+      height: 12vh;
+      width:500px;
+      bottom:7%;
+      position:relative;
+      
+    }
+    .menuItems{
+      display:flex;
+      flex-direction:column;
+      margin: 1vh 0 2vh 0; 
+    }
+
+    .allCustomers {
+      height:450px;
+      overflow: auto;
+    }
+   
+  }
+  #popUpArea img{
+    height: 7vh;
+    margin-bottom: 2px;
+  }
+  #popUpArea label{
+    margin-top:0;
+  }
+  
+  .footerContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #menuChoice-1{
+    align-items:center;
+    text-align:center;
+    padding: 0px;
+    width: 30vw;
+    margin-top: 10px;
+  }
+  #menuChoice-1 img{
+    width: 45px;
+    height: 45px;
+    padding :0;
+    margin: 0;
+
+  }
+  #menuChoice-2{
+    margin-top: 6px;
+    align-items:center;
+    width:30vw;
+    padding: 0px;
+  }
+  #menuChoice-2 img{
+    width:50px;
+    height: 50px;
+    padding :0;
+    margin: 0;
+
+  }
+  #menuChoice-3{
+    align-items:center;
+    padding: 0px;
+    width: 30vw;
+  }
+  #menuChoice-3 img{
+    width: 40px;
+    height: 40px;
+    padding :0;
+    margin: 0;
+  }
+  #menuChoice-1 label{
+    margin: 0;
+  }
+  #menuChoice-2 label{
+    margin: 0;
+  }
+  #menuChoice-3 label{
+    margin:0;
+
+  }

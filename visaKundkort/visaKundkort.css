@@ -1,0 +1,263 @@
+/*------------------------------------------------------------------------------
+ GENERAL CLASSES
+------------------------------------------------------------------------------*/
+
+/*Highligt editable items (when in edit Mode)*/
+.editHighlight {
+    background-color: rgb(214, 240, 253);
+    border-radius: 5px;
+    border: solid 3px white;
+}
+
+/*Remove button outline*/
+button {
+    outline: none;
+}
+
+/*Used to hide specific elements*/
+.hidden {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------
+ MAIN CONTAINER
+------------------------------------------------------------------------------*/
+.customerCardContainer {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+    /*------------------------------------------------------------------------------
+    HEADLINE RELATED (Company name and exit button)
+    ------------------------------------------------------------------------------*/
+
+    /*Customer company name box*/
+    #customerCompanyName {
+        text-align: left;
+        width: 100%;
+        margin-top: 2%;
+        font-size: 150%;
+        color: #00072D;
+    }
+
+    /*Line between company name and picture*/
+    .underline {
+        width: 100%;
+        background-color: #285FCC;
+        height: 2px;
+        margin-bottom: 2%;
+    }
+
+
+    /*Exit button container (clickable cross)*/
+    .exButtonContainer {
+        height: 9vw;
+        float: right;
+        text-align: center;
+        width: 10%;
+        margin-top: 1%;
+    }
+
+        .exButtonContainer button {
+            border: none;
+            color: #002965;
+            padding: 0px;
+            font-size: 220%;
+            max-height: 9vw;
+            background-color: white;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+    /*------------------------------------------------------------------------------
+    CUSTOMER DETAILS (List of customer properties (Org-no, name, number ETC)
+    ------------------------------------------------------------------------------*/
+
+    /*Picture frame (target for api)*/
+        #avatarBox {
+            width: 25vw;
+            display: inline-block;
+        }
+
+    /*Name of property ("Name:", "Number" etc)*/
+    .detailsHeadline {
+        float: left;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+
+    /*Actual data ("123", "Joe" etc)*/
+    .detailsContainer {
+        line-height: 1.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /*Transition between last property(notes) and field for notes*/
+    .disableNoteFieldEdit {
+        line-height: 1.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /*------------------------------------------------------------------------------
+    VIEW COMMENT
+    ------------------------------------------------------------------------------*/
+
+    /*View slot for everything comment related*/
+    #notesField {
+        height: 40vw;
+        width: 100%;
+        box-sizing: content-box;
+        font-size: 1.1rem;
+        overflow: auto;
+        border-top: solid #285FCC 2px;
+        border-bottom: solid #285FCC 2px;
+        max-height: 200px;
+    }
+
+    /*Time stamp*/
+    .commentTimestamp {
+        color: white;
+        background-color: #285FCC;
+        font-size: 75%;
+        margin-bottom: 1%;
+    }
+
+    /*Checkbox*/
+    .toggleCheckbox {
+        float: left;
+        transform: scale(1.5);
+        margin-top: 7vw;
+        margin-left: 2vw;
+    }
+
+    /*Text area*/
+    .textField {
+        margin-left: 8vw;
+    }
+
+    /*------------------------------------------------------------------------------
+    NEW COMMENT (INPUT SCREEN)
+    ------------------------------------------------------------------------------*/
+
+    /*Comment input container*/
+    #commentInputField {
+        height: 40vw;
+        width: 100%;
+        max-width: 500px;
+        max-height: 200px;
+        background-color: white;
+        border: solid #285FCC 2px;
+        margin-bottom: 2vw;
+        z-index: 10;
+        position: absolute;
+        box-sizing: border-box;
+        margin-top: 2px;
+    }
+
+        /*Container for buttons inside comment input area*/
+        #insideCommentButtonContainer {
+            width: 100%;
+            height: 15vw;
+            z-index: 11;
+            position: absolute;
+            margin-top: 25vw;
+            margin-right: 1vw;
+            font-size: 150%;
+        }
+
+            /*Buttons inside comment input area*/
+            #insideCommentButtonContainer button {
+                background-color: transparent;
+                width: 10vw;
+                height: 10vw;
+                z-index: 12;
+                border: none;
+                border-radius: 50%;
+                color: #285FCC;
+                font-size: 150%;
+                float: right;
+                margin-right: 2.5vw;
+                margin-top: 2.5vw;
+            }
+
+    /*------------------------------------------------------------------------------
+    NEW COMMENT (VISUAL EFFECTS)
+    ------------------------------------------------------------------------------*/
+
+    /*Transparent gray field over rest of page*/
+    #grayBox {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-width: 500px;
+        background-color: gray;
+        opacity: 0.3;
+    }
+
+    /*Graying out other buttons*/
+    #focusColor1 {
+        background-color: lightgray;
+    }
+
+    #focusColor2 {
+        background-color: lightgray;
+    }
+
+    #focusColor3 {
+        background-color: lightgray;
+    }
+
+    #inputMarker {
+        opacity: 0;
+        height: 6vw;
+        width: 1vw;
+        background-color: #002965;
+        position: absolute;
+        z-index: 11;
+        margin-top: 1vw;
+        margin-left: 0.5vw;
+        animation: blinker 0.3s linear 5;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 100;
+        }
+    }
+
+    /*------------------------------------------------------------------------------
+    BUTTONS UNDER COMMENT AREA
+    ------------------------------------------------------------------------------*/
+
+    /*Container*/
+    .container-View-Customer {
+        margin-bottom: 2vw;
+    }
+
+        /*Buttons under comment area*/
+        .container-View-Customer button {
+            font-size: 2.2rem;
+            color: white;
+            height: 15vw;
+            width: 15vw;
+            max-width: 50px;
+            max-height: 50px;
+            margin-left: 2.5vw;
+            border: none;
+            background-color: #285FCC;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+
+
+
+
+
+

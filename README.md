@@ -1,2 +1,2 @@
-# CRM-Jonas
-crm
+# E-commerce
+E-commerce for learning purpose @Nackademin

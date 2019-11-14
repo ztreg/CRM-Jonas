@@ -1,0 +1,51 @@
+@media screen and (min-width: 500px) {
+    .mediaQueryContainer {
+        width: 500px;
+        margin: 3vh auto auto auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .textField {
+        margin-left: 1vw;
+    }
+    #insideCommentButtonContainer {
+        margin-top: 0px;
+        height: 200px;
+    }
+    #insideCommentButtonContainer button {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        margin-top: 150px;
+        max-height: 1px;
+        max-width: 50px;
+    }
+    #grayBox {
+        max-height: 730px;
+        height: 730px;
+    }
+    .toggleCheckbox {
+        transform: scale(1);
+        margin-right: 10px;
+        margin-top: 2.5px;
+    }
+    #inputMarker {
+        display:none;
+    }
+
+
+}
+
+#insideCommentButtonContainer {
+    max-width: 500px;
+}
+
+#avatarBox {
+    max-width: 200px;
+}
+
+#inputMarker {
+    max-height: 20px;
+}

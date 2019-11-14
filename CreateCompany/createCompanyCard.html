@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../visaKundkort/visaKundkort.css" rel="stylesheet" />
+
+    <!-- NECESSARY FOR USED SYMBOLS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="headerPlaceholder"></div>
+
+    <!-- CustomerCard START -->
+    <div id ="customerCardContent"class="customerCardContainer">
+
+        <div id="customerCompanyName">Bolagsnamnet AB
+            <button class="fa fa-remove" id="toggle" type="button"></button>
+        </div>
+
+        <div class="avatarBoxContainer">
+            <div id="avatarBox"></div>
+        </div>
+
+        <div class="detailsContainer">
+
+            <div  class="detailsContainer">ID:</div>
+            <div  class="detailsContainer">Namn:</div>
+            <div  class="detailsContainer">Epost:</div>
+            <div  class="detailsContainer">Telefon:</div>
+            <div  class="detailsContainer">Anteckningar:</div>
+            
+        </div>
+
+        <div id="notesField" contenteditable="true"></div>
+
+        <div class="container-View-Customer">
+            <button id="plusBtn" class="fa fa-plus"></button>
+            <button class="fa fa-trash"></button>
+            <button class="fa fa-pencil"></button>
+            <span>Lägg till</span>
+            <span>Ta bort</span>
+            <span>Redigera</span>
+        </div>
+        <!-- CustomerCard END -->
+
+       
+    </div>
+    </div>
+    <script src="toggle.js"></script>
+    <script src="../visaKundkort/visakort.js"></script>
+</body>
+
+</html>

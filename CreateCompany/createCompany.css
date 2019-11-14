@@ -1,0 +1,286 @@
+#content{
+  background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 6vh 0vh 0vh 10vw;
+    justify-content:center;
+    width:80%;
+  }
+  #content label{
+    margin: 2vh 0 1vh 0;
+  }
+  #content input{
+    border:none; 
+  }
+  #box1{
+    width:100%; 
+  }
+  #box2{
+    width: 100%;
+  }
+  #box3{
+    width: 100%;
+    }
+  #noteArea{
+    width:100%;
+    
+  }
+  #noteArea textarea{
+    margin-top: 1vh;
+    height: 30vh;
+  }
+  .createInput{
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px rgba(0,0,0,0.23);
+  }
+  #createButton{
+   width:100%;
+   text-decoration: none;
+   background:#285FCC;
+   text-transform:uppercase;
+   padding: 5%;
+   margin: 40px auto 15vh;
+   color:#ffffff;
+   border-radius:4px;
+   font-weight:800;
+   font-size:0.8em;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  #createButton:hover{
+    background:#2CC06B;
+  }
+  #popUpAreaTwo a{
+    color:white;
+  }
+  #customerCardContent{
+    margin:13vh 0 0 0;
+  }
+  #popUpArea{
+    display:flex;
+    color:white;
+    height: 16vh;
+    background-color: #002965;
+    width:100%;
+    margin: 0vh 0vw 0vh 0vw;
+    justify-content:flex-end;
+    justify-content: space-evenly;
+    justify-content:space-between;
+    text-align:center;
+    position:fixed;
+    bottom:10%;
+    padding: 0;
+    font-size: 12px; 
+  }
+  #popUpAreaTwo{
+    display:flex;
+    color:white;
+    height: 16vh;
+    background-color: #002965;
+    width:100%;
+    margin: 0vh 0vw 0vh 0vw;
+    justify-content:flex-end;
+    justify-content: space-evenly;
+    justify-content:space-between;
+    text-align:center;
+    position:fixed;
+    bottom:10%;
+    padding: 0;
+    font-size: 12px; 
+  }
+  #popUpAreaTwo img{
+    height: 7vh;
+    margin-bottom: 2px;
+  }
+  #popUpAreaTwo label{
+    margin-top:0;
+  }
+  .menuItems{
+    display:flex;
+    flex-direction:column;
+    margin: 2vh 10vw 2vh 11vw; 
+  }
+  .footerContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #menuChoice-1{
+    align-items:center;
+    text-align:center;
+    padding: 0px;
+    width: 30vw;
+    margin-top: 10px;
+  }
+  #menuChoice-1 img{
+    width: 45px;
+    height: 45px;
+    padding :0;
+    margin: 0; 
+  }
+  #menuChoice-2{
+    margin-top: 6px;
+    align-items:center;
+    width:30vw;
+    padding: 0px;  
+  }
+  #menuChoice-2 img{
+    width:50px;
+    height: 50px;
+    padding :0;
+    margin: 0; 
+  }
+  #menuChoice-3{
+    align-items:center;
+    padding: 0px;
+    width: 30vw;
+  }
+  #menuChoice-3 img{
+    width: 40px;
+    height: 40px;
+    padding :0;
+    margin: 0;  
+  }
+  #menuChoice-1 label{
+    margin: 0;
+  }
+  #menuChoice-2 label{
+    margin: 0;
+  }
+  #menuChoice-3 label{
+    margin:0;
+  }
+  #customerCardContent{
+    margin: 1vh 0 0 0;
+  }
+  #avatarBox img {
+    width: 25vw;
+    display: inline-block;
+}
+.exButtonContainer{
+  margin: 0 0 1vh 0;
+}
+#apiCommentTarget{
+  padding: 2px 10px 0 2px;
+}
+  @media screen and (min-width: 500px) {  
+    #content{
+      width:500px;
+      margin:14vh auto auto auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      padding: 0px ;
+      display:flex;
+      flex-direction:column; 
+      margin-top:0;
+    }
+    #box1{
+      margin-top:4vh;
+      justify-content:center;
+      width:100%;
+      display:flex;
+      flex-direction:row;
+    }
+    #box1 div{
+      margin: auto;
+      width: 40%;
+    }
+    #box2{
+      justify-content:center;
+      width: 100%;
+      display:flex;
+      flex-direction:row;
+    }
+    #box2 div{
+      margin:auto;
+      width:40%;
+    }
+    #box3 label{
+      margin-bottom:6px;
+      padding: 0;
+    }
+    #box3{
+      width: 90%;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start; 
+    }
+    #box3 input{
+      padding: 0;
+      margin-top:0;
+      width: 45%;
+    }
+    #createButton{
+      margin-bottom: 2vh;
+      padding: 20px 30px 40px;
+      width: 230px;
+      vertical-align:center;
+      height:30px;
+    }
+    .createInput{
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+      0 6px 6px rgba(0,0,0,0.23);
+    }
+    #noteArea{
+      width:90%;
+      height:25vh;
+    }
+    #noteArea textarea{
+      height: 20vh;
+    }
+    #popUpArea{
+      height: 10vh;
+      width:500px;
+      bottom:8%;
+      position:relative;
+    }
+    #popUpAreaTwo{
+      height: 15vh;
+      width:500px;
+      bottom:8%;
+      position:relative;
+    }
+    .menuItems{
+      display:flex;
+      flex-direction:column;
+      margin: 1vh 0 2vh 0; 
+    }
+    body{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      
+    }
+    .topnav{
+      margin-top:3vh;
+    }
+    #customerCardContent{
+      width:500px;
+      margin: 1vh 0 0 0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px rgba(0,0,0,0.23);
+    }
+    #notesfield{
+      width: 20%;
+    } 
+    #footerTwo{
+      position:relative;
+    }
+    #footer{
+      position:relative;
+    }
+    #moreBtn-customer{
+      margin-left: 2.5vw;
+    }
+    #moreTxt-customer{
+      margin-right: vw;
+    }
+    #avatarBox img {
+      width: 200px;
+    }
+  }
+
+ 
+
+  

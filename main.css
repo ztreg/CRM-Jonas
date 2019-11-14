@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: white;
+}
+
+#popUpArea a {
+  text-decoration: none;
+  color: white;
+}
+
+#content label {
+  margin: 2vh 0 1vh 0;
+}
+
+#content input {
+  border: none;
+}
+
+#box1 {
+  width: 100%;
+}
+
+#box2 {
+  width: 100%;
+}
+
+#box3 {
+  width: 100%;
+}
+
+#noteArea {
+  width: 100%;
+}
+
+#noteArea textarea {
+  margin-top: 1vh;
+  height: 30vh;
+}
+
+.createInput {
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#createButton {
+  width: 100%;
+  text-decoration: none;
+  background: #285FCC;
+  text-transform: uppercase;
+  padding: 5%;
+  margin: 40px auto 15vh;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 0.8em;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#createButton:hover {
+  background: #2CC06B;
+}
+
+/* HEADER ENDS HERE AND BODY STARTS HERE */
+
+/* Style the navigation menu */
+
+.topnav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #002965;
+  height: 10vh;
+  position:sticky;
+  top:0%;
+}
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+  cursor: pointer;
+}
+
+/* Seach Function */
+
+.searchDropDown {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 5vh;
+  cursor: pointer;
+}
+
+#searchButton {
+  background-color: #002965;
+  color: white;
+  border:none;
+  float: right;
+}
+
+#logo {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  color: white;
+  text-align: center;
+}
+
+#logo img {
+  height: 8vh;
+  margin-top: 4px;
+}
+
+/* The search field */
+
+#myInput {
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: 8vh;
+  border-bottom: 1px solid #ddd;
+  outline:none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  margin-top: 2%;
+  margin-left: 10%;
+  display: none;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #f6f6f6;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  z-index: 1;
+  width: 110%;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
+
+/*FOOTER MAIN CONTAINER, LEFT TO RIGHT (everything footer related is inside this container)*/
+
+.footerContainer {
+  background-color: #002965;
+  height: 12%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+/*SPLIT FOOTER INTO 3 EQUALLY WIDE PARTS ON A ROW*/
+
+.footerItemContainer {
+  width: 33.33%;
+  height: 100%;
+}
+
+/*SYMBOL DESIGN AND POSITION INSIDE FOOTER*/
+
+.footerItemContainer button {
+  background-color: transparent;
+  font-size: 35px;
+  color: white;
+  margin: 2vh 0 0 10vw;
+  width: 40%;
+  border: none;
+  padding: 0;
+}
+
+/*TEXT UNDER EACH FOOTER SYMBOL*/
+
+.footerItemText {
+  font-size: 12px;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*HIDE STUFF THAT WILL BE "TOGGLED"*/
+
+.hidden {
+  display: none;
+}
+
+/*CLASS USED TO HIDE STUFF THAT WILL BE TOGGLED*/
+
+.shaker {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/*SHAKES ITEMS WITH THE SHAKE CLASS*/
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+#footerHome {
+  background-image: url(images/homeSymbol.JPG);
+  background-size: cover;
+  height: 12vw;
+}
+
+#footerAdd {
+  background-image: url(images/plusSymbol.JPG);
+  background-size: cover;
+  height: 12vw;
+}
+
+#footerMore {
+  background-image: url(images/dotsSymbol.JPG);
+  background-size: cover;
+  height: 12vw;
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    width: 500px;
+  }
+
+  .footerContainer {
+    display: flex;
+    min-height: 0;
+    width: 500px;
+    position: sticky;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+  .footerItemContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .footerItemContainer button {
+    height: 2vh;
+    margin: 0 0 3vh 0;
+    display: flex;
+  }
+  .topnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #002965;
+    height: 10vh;
+    position:sticky;
+    top:0%;
+    width: 500px;
+  }
+  #logo {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    color: white;
+    text-align: center;
+  }
+  #moreBtn {
+    margin-left: 2.8vw;
+  }
+  #menuChoice-3{
+    margin-top:2vh;
+  }
+}

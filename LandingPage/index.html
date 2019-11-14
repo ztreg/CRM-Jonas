@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="../visaKundkort/visaKundkort.css">
+
+</head>
+
+<body>
+    <div class="mQueryContainer">
+
+        <!-- NEW NAVBAR STARTS HERE -->
+        <div class="topnav">
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="../visaKundkort/visaKundKort.html">Dooley Inc</a>
+                <a href="../visaKundkort/visaKundKort.html">Schowalter - Howell</a>
+                <a href="../visaKundkort/visaKundKort.html">Lebsack Incee</a>
+                <a href="../visaKundkort/visaKundKort.html">Raichel, Kub and Brakus</a>
+                <a href="../visaKundkort/visaKundKort.html">Prosacco and Sons</a>
+                <a href="../visaKundkort/visaKundKort.html">Kreiger LCC</a>
+                <a href="../visaKundkort/visaKundKort.html">Schmidt - CruickShank</a>
+            </div>
+            <div id="logo">
+                <img src="../images/Loggan.JPG" alt="logo">
+            </div>
+
+            <div class="searchDropDown">
+                <button id="searchButton" type="button" onclick="showSearch()"><i
+                        class="fa fa-search"><span></span></i></button>
+            </div>
+        </div>
+        <!-- NEW NAVBAR ENDS HERE -->
+        
+        <!-- BODY STARTS HERE -->
+       
+
+        
+        <div class="container-body">
+            <a href="../CreateCompany/createCompany.html"><button class="box1 fa fa-user-plus"></button></a>
+
+            <a href="#"><button class="box2 fa fa-plus" id="btnAddTodo"></button></a>
+
+            <a href="../visaKundLista/showCustomers.html"><button class="box3 fa fa-address-card"></button></a>
+            
+            <span><a href="../CreateCompany/createCompany.html">Lägg till kund</a></span>
+            <span>Lägg till task</span>
+            <a href="../visaKundLista/showCustomers.html"><span>Min kundlista</span></a>
+        </div> <br>
+
+        <div class="testgrid" id="gridAddTask">
+
+            <textarea name="userInput" id="userInput" cols="10" rows="2" placeholder="Skriv en task"></textarea><br>
+            <!-- <li  id="icon"><input type="textarea" id="userInput" ></li> <br> -->
+            <button id="btnCheckToDo" class="fa fa-check-circle"></button>
+            <button id="btnXitToDo" class="fa fa-times-circle"></button>
+            <!-- DROPDOWN -->
+            <div id="companyDropDown">
+                <select id="company">
+                    <option id="choose">Välj vilken kund &#9660</option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                    <option class="company"></option>
+                </select>
+            </div>
+
+            <!-- DROP DOWN ENDS HERE -->
+        </div>
+
+        <!-- TO DO LIST STARTS HERE -->
+        <div class="container-toDo">
+
+            <div class="text2">
+                <button id="todayTask" class="todayTask1">Idag</button><button id="nextDayTask">Övriga
+                    dagar</button><br>
+            </div>
+
+            <div id="todo-items">
+
+            </div>
+
+            <div id="toDo-item-nextDay" class="class-nextDay">
+
+            </div>
+        </div>
+          <!--popUp Area -->
+          <div id ="popUpArea">
+                <div id="menuChoice-1" class="menuItems">
+                    <a href="../CreateCompany/createCompany.html"><img src="../images/AddCustomer.png" id=menyChoiceOne></a>
+                    <a href="../CreateCompany/createCompany.html"><label for ="menyChoiceOne">Lägg till kund</label></a>
+                </div>
+                <div id="menuChoice-2" class="menuItems">
+                    <a href="../LandingPage/index.html"><img src="../images/NewPlus.png" id=menyChoiceOne></a>
+                    <label for ="menyChoiceOne"><a href="../LandingPage/index.html">Lägg till task</a></label>
+                </div>
+                <div id="menuChoice-3" class="menuItems">
+                    <a href="../Framsida/login.html"><img src="../images/logout.png" id=menyChoiceOne></a>
+                    <label for ="menyChoiceOne"><a href="../Framsida/login.html">Logga ut</a></label>
+                </div>
+            </div>
+         
+    
+
+    
+        
+       <!--Footer-->
+    <footer> 
+            <div class="footerContainer">
+                <div class="footerItemContainer">
+                    <a href="../LandingPage/index.html"> <button class="fa fa-home"></button> </a>
+                    <div class="footerItemText"><a href="../LandingPage/index.html">Hem</a></div>
+                </div>
+                <div class="footerItemContainer">
+                    <a href="../visaKundLista/showCustomers.html"><button class="fa fa-address-card"></button></a>
+                    <div class="footerItemText"><a href="../visaKundLista/showCustomers.html">Kundlista</a></div>
+                </div>
+                <div class="footerItemContainer toggled footerMoreBtn">
+                        <button id="moreBtn" class="fa fa-ellipsis-h"></button>
+                        <div id="moreTxt"class="footerItemText">Mer</div>
+                    </div>
+                    <div class="footerItemContainer papperskorg hidden toggled">
+                        <button class="fa fa-trash shaker" id="trash"></button>
+                        <div class="footerItemText">Ta bort</div>
+                    </div>
+            </div>
+        </footer>
+    </div>  
+        <!-- FOOTER END-->
+    </div>
+
+    <script src="landingPage.js"></script>
+    <script src="../main.js"></script>
+    <script src="nextDaysToDo.js"></script>
+    <script src="../CreateCompany/popUp.js"></script>
+</body>
+
+</html>

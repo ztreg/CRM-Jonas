@@ -1,0 +1,46 @@
+/*----------------------------------------------FOOTER----------------------------------------------*/
+
+
+/*Hela footern från vänster till höger*/
+
+.footerContainer {
+    background-color: #002965;
+    height: 10%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 10%;
+}
+
+
+/*Indelningen av footern i 3 lika stora delar*/
+
+.footerItemContainer {
+    background-color: #002965;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+
+/*Respektive knapp (skall ersättas med symboler)*/
+
+.footerButton {
+    margin: 15px 30% 1%;
+    height: 40%;
+    width: 40%;
+    background-color: white;
+    /* skall ersättas med symboler men lämnas vit så länge för att visa på var symbolen kommer ligga.*/
+    border: none;
+    padding: 0;
+}
+
+
+/*Den lilla texten under varje footersymbol*/
+
+.footerItemText {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
